@@ -1,0 +1,468 @@
+/* ===== TRAVELGUIDE STYLES ===== */
+/* This CSS file is shared across all pages. Each member should only edit their own section. */
+
+/* ===== GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* ===== NAVIGATION BAR (SHARED) ===== */
+.navbar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: #3498db;
+}
+
+/* ===== CONTAINER & GENERAL LAYOUT ===== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* ===== HERO SECTION (HOME PAGE - VARUN JOSHI) ===== */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ===== HOME PAGE SECTIONS (VARUN JOSHI) ===== */
+.intro-section {
+    background: white;
+    padding: 3rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.intro-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.feature-card h3 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* ===== MEMBER 2 STYLES - PLACES PAGE ===== */
+.member-2-header {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.member-2-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.member-2-header p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+.member-2-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.places-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.place-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+.place-card h3 {
+    color: #f5576c;
+    padding: 1.5rem 1.5rem 0.5rem;
+    font-size: 1.5rem;
+}
+
+.place-card p {
+    padding: 0 1.5rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.place-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+.places-info {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-left: 5px solid #f5576c;
+    border-radius: 4px;
+}
+
+.places-info h2 {
+    color: #f5576c;
+    margin-bottom: 1rem;
+}
+
+/* ===== MEMBER 3 STYLES - FOOD & CULTURE PAGE ===== */
+.member-3-header {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    color: #333;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.member-3-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.member-3-header p {
+    font-size: 1.1rem;
+}
+
+.member-3-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.food-culture-intro {
+    background: #fff9e6;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border-left: 5px solid #ffa500;
+}
+
+.food-culture-intro h2 {
+    color: #d68910;
+    margin-bottom: 0.5rem;
+}
+
+.cuisine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.cuisine-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    border-top: 4px solid #ffa500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cuisine-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+.cuisine-card h3 {
+    color: #d68910;
+    padding: 1.5rem 1.5rem 0.5rem;
+    font-size: 1.4rem;
+}
+
+.cuisine-card p {
+    padding: 0 1.5rem 1rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.cuisine-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cultural-practices {
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 5px solid #ffa500;
+}
+
+.cultural-practices h2 {
+    color: #d68910;
+    margin-bottom: 1rem;
+}
+
+.cultural-practices ul {
+    list-style-position: inside;
+    line-height: 2;
+    color: #555;
+}
+
+/* ===== MEMBER 4 STYLES - TRAVEL TIPS PAGE ===== */
+.member-4-header {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    color: #333;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.member-4-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.member-4-header p {
+    font-size: 1.1rem;
+}
+
+.member-4-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.tips-intro {
+    background: #e8f4f8;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border-left: 5px solid #3498db;
+}
+
+.tips-intro h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.tip-card {
+    background: linear-gradient(135deg, #e8f4f8 0%, #f0f8ff 100%);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    border-left: 5px solid #3498db;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+}
+
+.tip-card h3 {
+    color: #2980b9;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.tip-card p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.tip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.essential-checklist {
+    background: #f0f8ff;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 5px solid #3498db;
+}
+
+.essential-checklist h2 {
+    color: #2980b9;
+    margin-bottom: 1rem;
+}
+
+.essential-checklist ul {
+    list-style-position: inside;
+    line-height: 2;
+    color: #555;
+}
+
+/* ===== FOOTER (SHARED) ===== */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-top: 3px solid #3498db;
+}
+
+.footer p {
+    opacity: 0.9;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .member-2-header h1,
+    .member-3-header h1,
+    .member-4-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .places-grid,
+    .cuisine-grid,
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .intro-section {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu {
+        gap: 0.25rem;
+        font-size: 0.9rem;
+    }
+
+    .feature-card h3,
+    .place-card h3,
+    .cuisine-card h3,
+    .tip-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+}
