@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Iconic Indian Cities: Places, Food, Culture & Travel Tips</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            background-color: #f5f5f5; 
+            color: #2c3e50; 
+        }
+        
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 30px; 
+            border-radius: 12px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+        
+        header h1 { 
+            font-size: 2.8em; 
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        h1 { color: #ff9800; font-size: 2.5em; margin-bottom: 10px; }
+        
+        h2 { 
+            color: #2c3e50; 
+            border-bottom: 3px solid #ff9800; 
+            padding-bottom: 15px; 
+            margin-top: 50px;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        
+        h3 { 
+            color: #34495e; 
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        
+        h4 {
+            color: #555;
+            margin: 15px 0 10px 0;
+            font-size: 1.1em;
+        }
+        
+        img { 
+            max-width: 100%; 
+            height: auto;
+            max-height: 500px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        iframe { 
+            width: 100%; 
+            max-width: 600px;
+            height: 315px; 
+            border: none; 
+            border-radius: 8px;
+            margin: 20px 0;
+            display: block;
+        }
+        
+        ul, ol { 
+            padding-left: 30px;
+            margin: 15px 0;
+        }
+        
+        li { 
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+        
+        p {
+            font-size: 1.05em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .section { 
+            margin-bottom: 50px; 
+        }
+        
+        .city-section { 
+            margin-bottom: 40px; 
+            padding: 25px; 
+            border-left: 5px solid #ff9800; 
+            background: #fffbf0;
+            border-radius: 8px;
+        }
+        
+        .video-section { 
+            text-align: center; 
+            margin: 20px 0; 
+            background: #f0f0f0; 
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        hr { 
+            border: none; 
+            height: 2px; 
+            background: linear-gradient(to right, transparent, #ff9800, transparent); 
+            margin: 50px 0; 
+        }
+        
+        /* Navigation Buttons */
+        .nav-buttons { 
+            text-align: center; 
+            margin: 30px 0; 
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .nav-buttons a { 
+            display: inline-block; 
+            padding: 12px 24px; 
+            background-color: #ff9800; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 25px; 
+            font-weight: 600; 
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(255, 152, 0, 0.3);
+            cursor: pointer;
+        }
+        
+        .nav-buttons a:hover { 
+            background-color: #f57c00; 
+            transform: translateY(-3px); 
+            box-shadow: 0 6px 12px rgba(255, 152, 0, 0.4); 
+        }
+        
+        .nav-buttons a:active {
+            transform: translateY(-1px);
+        }
+        
+        /* Back to Top Button */
+        .back-to-top { 
+            text-align: center; 
+            margin: 40px 0; 
+        }
+        
+        .back-to-top a { 
+            display: inline-block; 
+            padding: 12px 24px; 
+            background-color: #27ae60; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 25px; 
+            font-weight: 600; 
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(39, 174, 96, 0.3);
+        }
+        
+        .back-to-top a:hover { 
+            background-color: #229954; 
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(39, 174, 96, 0.4);
+        }
+        
+        strong {
+            color: #d35400;
+        }
+        
+        /* Intro Section */
+        .intro-text {
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 4px solid #ff9800;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            h3 {
+                font-size: 1.2em;
+            }
+            
+            .nav-buttons {
+                flex-direction: column;
+            }
+            
+            .nav-buttons a {
+                width: 100%;
+            }
+            
+            iframe {
+                height: 250px;
+            }
+            
+            img {
+                height: auto;
+                max-height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- TOP INFO BAR -->
+<div style="
+    width:100%;
+    background:#000;
+    color:white;
+    padding:8px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:0.9em;
+">
+
+    <!-- Website Title -->
+    <div style="font-weight:600;">
+        Travel Guide : To Your City
+    </div>
+
+    <!-- Links -->
+    <div>
+        <a href="#privacy-policy" style="color:white;text-decoration:none;margin-right:15px;">
+            Privacy Policy
+        </a>
+        <a href="#faqs" style="color:white;text-decoration:none;">
+            FAQs
+        </a>
+    </div>
+
+</div>
+
+<!-- VIDEO HOME SECTION -->
+<div style="position:relative;height:100vh;width:100%;overflow:hidden;">
+
+    <video autoplay muted loop playsinline
+        style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+        <source src="India-360-v2.mp4" type="video/mp4">
+    </video>
+
+    <div style="
+        position:relative;
+        height:100%;
+        background:rgba(0,0,0,0.5);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        color:white;
+        padding:20px;
+    ">
+        <div>
+            <h1 style="font-size:3em;margin-bottom:10px;">
+                  Exploring Iconic Indian Cities
+            </h1>
+            <p style="font-size:1.2em;margin-bottom:25px;">
+                Varanasi • Ayodhya • Mathura • Jaipur • Agra
+            </p>
+
+            <a href="#places" style="padding:12px 25px;background:orange;color:white;
+               text-decoration:none;border-radius:25px;margin:5px;display:inline-block;">
+               Places
+            </a>
+
+            <a href="#food-culture" style="padding:12px 25px;background:orange;color:white;
+               text-decoration:none;border-radius:25px;margin:5px;display:inline-block;">
+               Food
+            </a>
+
+            <a href="#travel-tips" style="padding:12px 25px;background:orange;color:white;
+               text-decoration:none;border-radius:25px;margin:5px;display:inline-block;">
+               Travel
+            </a>
+<div style="margin-top:25px;">
+
+   <a href="#varanasi" style="padding:10px 18px;background:#27ae60;color:white;
+text-decoration:none;border-radius:20px;margin:5px;display:inline-block;">
+Varanasi</a>
+
+<a href="#ayodhya" style="padding:10px 18px;background:#27ae60;color:white;
+text-decoration:none;border-radius:20px;margin:5px;display:inline-block;">
+Ayodhya</a>
+
+<a href="#mathura" style="padding:10px 18px;background:#27ae60;color:white;
+text-decoration:none;border-radius:20px;margin:5px;display:inline-block;">
+Mathura</a>
+
+<a href="#jaipur" style="padding:10px 18px;background:#27ae60;color:white;
+text-decoration:none;border-radius:20px;margin:5px;display:inline-block;">
+Jaipur</a>
+
+<a href="#agra" style="padding:10px 18px;background:#27ae60;color:white;
+text-decoration:none;border-radius:20px;margin:5px;display:inline-block;">
+Agra</a>
+
+
+</div>
+
+        </div>
+    </div>
+</div>
+
+    <div id="top" class="container">
+   
+
+        
+        <div class="intro-text">
+            <p><strong>Welcome!</strong> As a passionate first-year engineering student, we are thrilled to share this comprehensive website on India's most iconic cities. From ancient engineering wonders to flavorful traditions, these cities blend history, spirituality, and innovation. This guide covers places information, food & culture, and travel tips—expanded with stunning images and YouTube embeds!</p>
+        </div>
+        
+        
+        <hr>
+        
+        <!-- PLACES SECTION -->
+        <div id="places" class="section">
+            <h2>🏛️ Discover the Places: General Information</h2>
+            <p>Explore the essence of each city through history, landmarks, and cultural vibes. As an engineer, I'm fascinated by their architectural feats and urban planning!</p>
+            
+            <!-- Varanasi -->
+        <div id="varanasi" class="city-section">
+
+                <h3>1. Varanasi: Eternal Spiritual Hub</h3>
+                <p>One of the world's oldest cities, Varanasi sits on the Ganges with 88 ghats for rituals. <strong>Key spots:</strong> Kashi Vishwanath Temple, Sarnath (Buddha's first sermon). It's a UNESCO tentative site, buzzing with pilgrims and silk weavers. The city represents eternal spirituality and has been a center of learning and devotion for millennia.</p>
+                <img src="https://www.taxiyatri.com/blog/wp-content/uploads/2024/03/Varanasi.jpg" alt="Ganges ghats in Varanasi with boats">
+                <div class="video-section">
+                    <h4>Watch: Varanasi Overview</h4>
+                    <iframe src="https://www.youtube.com/embed/Ey1FiqlYpPI?si=YTfC-9GOBpCLiS1D" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <ul>
+                    <li><strong>Kashi Vishwanath Temple:</strong> One of the 12 Jyotirlingas, highly sacred to Hindus</li>
+                    <li><strong>Dashaswamedh Ghat:</strong> The main ghat with daily Ganga Aarti ceremonies</li>
+                    <li><strong>Sarnath:</strong> Where Buddha gave his first sermon after enlightenment</li>
+                    <li><strong>Ganges River:</strong> Sacred for rituals, bathing, and spiritual cleansing</li>
+                    <li><strong>Silk Weaving:</strong> Famous Banarasi silk production heritage</li>
+                </ul>
+            </div>
+            
+            <!-- Ayodhya -->
+          <div id="ayodhya" class="city-section">
+
+                <h3>2. Ayodhya: Ram's Birthplace</h3>
+                <p>Ayodhya in Uttar Pradesh is central to the Ramayana epic. <strong>Highlights:</strong> Ram Janmabhoomi Temple (recently inaugurated), Hanuman Garhi, Saryu River ghats. It's evolving as a spiritual tourism hotspot with modern infrastructure, attracting devotees from around the world.</p>
+                <img src="https://www.travelfoxx.com/wp-content/uploads/2024/03/Cream-Green-Photo-Collage-Travel-Vlog-YouTube-Thumbnail.png" alt="Ram Temple in Ayodhya">
+                <div class="video-section">
+                    <h4>Watch: Ayodhya Highlights</h4>
+                    <iframe src="https://www.youtube.com/embed/g3hMOEwRLvE?si=an0doOE3TzOxS71G" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <ul>
+                    <li><strong>Ram Janmabhoomi Temple:</strong> Recently inaugurated grand temple marking Lord Ram's birthplace</li>
+                    <li><strong>Hanuman Garhi:</strong> Ancient hilltop temple with panoramic city views</li>
+                    <li><strong>Saryu River Ghats:</strong> Sacred bathing ghats along the holy river</li>
+                    <li><strong>Ram Ki Paidi:</strong> Historic pilgrimage steps leading to the temple</li>
+                    <li><strong>Kanak Bhawan:</strong> Ornate palace with beautiful architectural design</li>
+                </ul>
+            </div>
+            
+            <!-- Mathura -->
+       <div id="mathura" class="city-section">
+
+                <h3>3. Mathura: Krishna's Realm</h3>
+                <p>Mathura, with Vrindavan nearby, is Krishna's birthplace. <strong>Must-sees:</strong> Krishna Janmabhoomi Temple, Banke Bihari, ISKCON Temple. Famous for Holi celebrations and Raas Leela, it's a Braj heartland of devotion and divine love stories.</p>
+                <img src="https://mathuravrindavantourism.com/wp-content/uploads/2025/02/Mathura-Tour-Package-1024x538.jpg" alt="Krishna Temple Mathura">
+                <div class="video-section">
+                    <h4>Watch: Mathura Temples Tour</h4>
+                    <iframe src="https://www.youtube.com/embed/fW-neQsfQT8?si=6YMHdXrD50DriiUP" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <ul>
+                    <li><strong>Krishna Janmabhoomi Temple:</strong> Sacred birthplace of Lord Krishna</li>
+                    <li><strong>Banke Bihari Temple (Vrindavan):</strong> Famous for unique Krishna deity and devotional practices</li>
+                    <li><strong>ISKCON Temple:</strong> International Society for Krishna Consciousness center</li>
+                    <li><strong>Radha Kund & Krishna Kund:</strong> Sacred ponds from Krishna's legends</li>
+                    <li><strong>Holi Celebration:</strong> Vibrant festival of colors celebrated with great fervor</li>
+                </ul>
+            </div>
+            
+            <!-- Jaipur -->
+      <div id="jaipur" class="city-section">
+
+                <h3>4. Jaipur: Pink City's Majesty</h3>
+                <p>Rajasthan's capital, Jaipur boasts forts like Amber and Hawa Mahal. Planned by Maharaja Sawai Jai Singh II in 1727, it's a UNESCO World Heritage site featuring palaces, bazaars, and cultural experiences. The city is famous for its distinctive pink-colored buildings.</p>
+                <img src="https://guidetoindiantourism.com/wp-content/uploads/2022/08/Jaipur-pink-city-of-india-1024x533.jpg" alt="Hawa Mahal Jaipur">
+                <div class="video-section">
+                    <h4>Watch: Jaipur Royal Tour</h4>
+                    <iframe src="https://www.youtube.com/embed/rm_j6O8y148?si=7QrF0nxQYLe98g99" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <ul>
+                    <li><strong>Hawa Mahal (Palace of Winds):</strong> Iconic pink 5-story structure with 953 small windows</li>
+                    <li><strong>Amber Fort:</strong> Majestic hilltop fort with panoramic city views</li>
+                    <li><strong>City Palace:</strong> Blend of Rajasthani and Mughal architecture, partially royal residence</li>
+                    <li><strong>Jantar Mantar:</strong> UNESCO site with astronomical observation instruments</li>
+                    <li><strong>Bapu Bazaar & Johari Bazaar:</strong> Vibrant markets for textiles, jewelry, and crafts</li>
+                </ul>
+            </div>
+            
+            <!-- Agra -->
+         <div id="agra" class="city-section">
+
+                <h3>5. Agra: Mughal Marvels</h3>
+                <p>Agra houses the Taj Mahal, Agra Fort, and Fatehpur Sikri—all UNESCO World Heritage sites. Built during the Mughal era, it's a testament to love, power, and Persian-Indian fusion architecture. The Taj Mahal is one of the Seven Wonders of the World.</p>
+                <img src="https://th.bing.com/th/id/R.57da7eba95d6a6570d81bcbc3d1b37b8?rik=e7jWfElhwNem1Q&riu=http%3a%2f%2fwww.rajasthantourplanner.com%2fblog%2fwp-content%2fuploads%2f2017%2f07%2fagra-url-blog-1024x550.jpg&ehk=%2fdanN37%2fw%2b4C4weww32EprdYQPFjOVYEXjcQnjXvKBo%3d&risl=&pid=ImgRaw&r=0.jpg" alt="Taj Mahal Agra">
+                <div class="video-section">
+                    <h4>Watch: Agra Monuments</h4>
+                    <iframe src="https://www.youtube.com/embed/WMI489s3l8E?si=yO6_JCr-w2PRK-9g" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <ul>
+                    <li><strong>Taj Mahal:</strong> Symbol of love, built by Emperor Shah Jahan for his wife Mumtaz Mahal</li>
+                    <li><strong>Agra Fort:</strong> Red sandstone fort showcasing Mughal architecture and military design</li>
+                    <li><strong>Fatehpur Sikri:</strong> Abandoned 16th-century palace city, UNESCO World Heritage site</li>
+                    <li><strong>Mehtab Bagh:</strong> Garden offering stunning Taj Mahal views, especially at sunset</li>
+                    <li><strong>Itimad-ud-Daulah:</strong> Elegant marble tomb, a precursor to Taj Mahal's design</li>
+                </ul>
+            </div>
+            
+            <div class="back-to-top">
+                <a href="#video-section">🏠 Back to Top</a>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <!-- FOOD & CULTURE SECTION -->
+        <div id="food-culture" class="section">
+            <h2>🍲 Food & Culture Deep Dive</h2>
+            <p>Delve into the culinary delights and cultural tapestries of these cities—vegetarian havens with spiritual flavors, each with unique traditions and authentic recipes passed down through generations!</p>
+            
+            <!-- Varanasi Food & Culture -->
+            <div class="city-section">
+                <h3>Varanasi: Sattvic Streets & Rituals</h3>
+                <p><strong>Culture:</strong> Ganga Aarti (daily ritual), Banarasi silk, classical music, and spiritual ceremonies. <strong>Food philosophy:</strong> Pure, ritual-tied eats reflecting sattvic (pure) lifestyle.</p>
+                <img src="https://www.myvaranasi.com/wp-content/uploads/2018/06/Food-culture-of-Varanasi.png" alt="Kachori in Varanasi">
+                <div class="video-section">
+                    <h4>Watch: Varanasi Street Food & Culture</h4>
+                    <iframe src="https://www.youtube.com/embed/LLOEVk2FttU?si=PXkFvWMkquxgTVea" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <ul>
+                    <li><strong>Tomato Chaat:</strong> Tangy tomato smash with spices and sev (crispy vermicelli)</li>
+                    <li><strong>Kachori Sabzi:</strong> Crispy lentil bread with potato curry</li>
+                    <li><strong>Malaiyo:</strong> Frothy winter milk foam with saffron and nuts</li>
+                    <li><strong>Lassi:</strong> Thick yogurt shake served in earthen cups</li>
+                    <li><strong>Baati Chokha:</strong> Smoky wheat balls with vegetable mash and ghee</li>
+                    <li><strong>Litti Chokha:</strong> Coal-roasted stuffed balls with spiced mash</li>
+                    <li><strong>Malai Toast:</strong> Bread with clotted cream and jam</li>
+                    <li><strong>Rabri Jalebi:</strong> Syrupy sweets soaked in thickened milk</li>
+                    <li><strong>Dahi Bhalla:</strong> Yogurt-drowned lentil fritters</li>
+                    <li><strong>Banarasi Paan:</strong> Betel leaf digestif with sweet and aromatic fillings</li>
+                    <li><strong>Golgappa:</strong> Spiced water-filled puris (street snack)</li>
+                    <li><strong>Aloo Tikki Chaat:</strong> Spiced potato patties with yogurt and chutneys</li>
+                    <li><strong>Thandai:</strong> Spiced nut milk drink, popular during Holi</li>
+                </ul>
+            </div>
+            
+            <!-- Ayodhya Food & Culture -->
+          <div id="ayodhya" class="city-section">
+
+                <h3>Ayodhya: Devotional Feasts</h3>
+                <p><strong>Culture:</strong> Ram Leela performances, interfaith harmony, and temple rituals. <strong>Food philosophy:</strong> Prasad-focused simplicity, offering-based cuisine, and vegetarian purity.</p>
+                <img src="https://static.toiimg.com/photo/77373534.cms.jpg" alt="Sweets in Ayodhya">
+                <div class="video-section">
+                    <h4>Watch: Ayodhya Street Food</h4>
+                    <iframe src="https://www.youtube.com/embed/gJk0VRER6ko?si=9SEASuVR13PBKNel" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <ul>
+                    <li><strong>Kachori-Sabzi:</strong> Puffed pastries with spiced potatoes</li>
+                    <li><strong>Aloo Tikki Chaat:</strong> Tangy potato fritters with yogurt topping</li>
+                    <li><strong>Sattvik Thali:</strong> Pure vegetarian platter with rice, dal, and vegetables</li>
+                    <li><strong>Ram Peda:</strong> Milk fudge prasad (temple offering)</li>
+                    <li><strong>Malpua:</strong> Sweet pancakes in sugar syrup</li>
+                    <li><strong>Ram Laddoo:</strong> Moong dal balls with ghee and nuts</li>
+                    <li><strong>Kulhad Lassi:</strong> Earthen cup yogurt drink</li>
+                    <li><strong>Poori-Sabzi:</strong> Fried bread with vegetable curry</li>
+                    <li><strong>Desi Thali:</strong> Homestyle meal served at langars (community kitchens)</li>
+                    <li><strong>Dahi Puri:</strong> Yogurt-filled wafers with chutneys</li>
+                    <li><strong>Chappan Bhog:</strong> 56 festive dishes served during special occasions</li>
+                    <li><strong>Khasta Kachori:</strong> Flaky lentil pastries with potato filling</li>
+                </ul>
+            </div>
+            
+            <!-- Mathura Food & Culture -->
+            <div class="city-section">
+                <h3>Mathura: Dairy Devotion</h3>
+                <p><strong>Culture:</strong> Janmashtami celebrations, Raas Leela (Krishna dance drama), and milk-based traditions. <strong>Food philosophy:</strong> Krishna-inspired dairy sweets and makhani (butter) cuisine.</p>
+                <img src="https://static.toiimg.com/thumb/msid-65655416,width-1070,height-580,resizemode-75/65655416,pt-32,y_pad-40/65655416.jpg" alt="Mathura Peda">
+                <div class="video-section">
+                    <h4>Watch: Mathura Food Tour</h4>
+                    <iframe src="https://www.youtube.com/embed/U_KsP15EHJ4?si=sS4tqU-OHXkjo8vS" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <ul>
+                    <li><strong>Mathura Peda:</strong> Cardamom milk fudge, famous across India</li>
+                    <li><strong>Makhan Mishri:</strong> Butter and rock sugar crystals</li>
+                    <li><strong>Bedai & Jalebi:</strong> Stuffed puri with crispy sweet jalebi</li>
+                    <li><strong>Revari:</strong> Sesame jaggery bites, winter specialty</li>
+                    <li><strong>Kachori:</strong> Lentil-stuffed fried bread</li>
+                    <li><strong>Chole Bhature:</strong> Chickpea curry with puris</li>
+                    <li><strong>Lassi:</strong> Spiced yogurt cooler with fruits</li>
+                    <li><strong>Hing Kachori:</strong> Asafoetida-flavored pastry with aloo</li>
+                    <li><strong>Bhalle:</strong> Fried lentil balls in yogurt gravy</li>
+                    <li><strong>Bedai with Dubki Aloo:</strong> Fried bread with spicy potato gravy</li>
+                    <li><strong>Rabri:</strong> Thickened milk dessert with cardamom</li>
+                    <li><strong>Chhappan Bhog:</strong> Elaborate temple feast of 56 dishes</li>
+                </ul>
+            </div>
+            
+            <!-- Jaipur Food & Culture -->
+            <div class="city-section">
+                <h3>Jaipur: Royal Rajasthani Flavors</h3>
+                <p><strong>Culture:</strong> Ghoomar dance, Teej festival, block printing traditions, and royal heritage. <strong>Food philosophy:</strong> Ghee-laden heritage cuisine with earthy, bold flavors reflecting desert traditions.</p>
+                <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/04/Rajasthani-Cuisine.jpg" alt="Ghewar sweet">
+                <div class="video-section">
+                    <h4>Watch: Jaipur Street Food Adventure</h4>
+                    <iframe src="https://www.youtube.com/embed/YjkQm3r84Y8?si=mMBEh6Ue_QxejwdZ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <ul>
+                    <li><strong>Pyaaz Kachori:</strong> Onion-stuffed flaky fried pastry</li>
+                    <li><strong>Dal Kachori:</strong> Lentil-filled deep-fried delight</li>
+                    <li><strong>Ghewar:</strong> Syrup-soaked disc sweet, festive specialty</li>
+                    <li><strong>Kalakand:</strong> Paneer-milk fudge with cardamom</li>
+                    <li><strong>Malai Lassi:</strong> Creamy yogurt topped with rabri</li>
+                    <li><strong>Dal Baati Churma:</strong> Lentil stew with baked balls and sweet crumble</li>
+                    <li><strong>Mirchi Bada:</strong> Stuffed chili fritters</li>
+                    <li><strong>Bikaneri Bhujia:</strong> Spicy chickpea snacks</li>
+                    <li><strong>Kanda Kachauri:</strong> Onion fritters</li>
+                    <li><strong>Masala Chai with Biscuits:</strong> Spiced tea ritual</li>
+                    <li><strong>Laal Maas:</strong> Fiery mutton curry (non-vegetarian option)</li>
+                    <li><strong>Gatte ki Sabzi:</strong> Gram flour dumplings in yogurt gravy</li>
+                    <li><strong>Rajasthani Thali:</strong> Multi-dish platter with breads and curries</li>
+                </ul>
+            </div>
+            
+            <!-- Agra Food & Culture -->
+            <div class="city-section">
+                <h3>Agra: Mughlai Indulgence</h3>
+                <p><strong>Culture:</strong> Taj Mahotsav festival, zardozi embroidery, Mughal heritage, and Persian influence. <strong>Food philosophy:</strong> Persian-spiced richness with aromatic, creamy preparations reflecting royal courts.</p>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/35/03/ea/eat-like-a-local-in-agra.jpg" alt="Petha in Agra">
+                <div class="video-section">
+                    <h4>Watch: Agra Street Food Tour</h4>
+                    <iframe src="https://www.youtube.com/embed/rf4NnDpy03k?si=LN5RgrUQ3lMobJ7w" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <ul>
+                    <li><strong>Petha:</strong> Ash gourd candy, plain or flavored varieties</li>
+                    <li><strong>Bedai and Jalebi:</strong> Stuffed puri with crispy sweets</li>
+                    <li><strong>Biryani:</strong> Aromatic spiced rice with meat and saffron</li>
+                    <li><strong>Kebabs:</strong> Tandoori minced meat skewers</li>
+                    <li><strong>Korma:</strong> Creamy nut-based curry with yogurt</li>
+                    <li><strong>Dalmoth:</strong> Spiced lentil-nut savory mix</li>
+                    <li><strong>Chaat:</strong> Tangy potato-water snacks</li>
+                    <li><strong>Dahi Bhalla:</strong> Yogurt-soaked fritters in sweetened cream</li>
+                    <li><strong>Kachori:</strong> Pastry with potato curry</li>
+                    <li><strong>Rabri Faluda:</strong> Milky vermicelli dessert</li>
+                    <li><strong>Chole Bhature:</strong> Chickpeas with fried bread</li>
+                    <li><strong>Butter Chicken:</strong> Tomato-cream gravy with chicken</li>
+                    <li><strong>Tandoori Chicken:</strong> Smoky yogurt-marinated chicken</li>
+                </ul>
+            </div>
+            
+            <div class="back-to-top">
+                <a href="#top">🏠 Back to Top</a>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <!-- TRAVEL TIPS SECTION -->
+        <div id="travel-tips" class="section">
+            <h2>✈️ Travel Tips & Practical Guidance</h2>
+            <p>Essential information to make your journey comfortable, safe, and memorable!</p>
+            
+            <div class="city-section">
+                <h3>Best Times to Visit</h3>
+                <ul>
+                    <li><strong>Varanasi:</strong> October to March (cool weather). Avoid monsoon (July-September)</li>
+                    <li><strong>Ayodhya:</strong> October to March for pleasant temperatures</li>
+                    <li><strong>Mathura:</strong> October to March. Janmashtami (August) for festival experience</li>
+                    <li><strong>Jaipur:</strong> November to February. Pink City is beautiful in all seasons</li>
+                    <li><strong>Agra:</strong> October to March. Taj Mahal is magical in early morning light</li>
+                </ul>
+            </div>
+            
+            <div class="city-section">
+                <h3>Transportation Tips</h3>
+                <ul>
+                    <li><strong>Between Cities:</strong> Trains are affordable and comfortable. Consider Indian Railways for longer distances</li>
+                    <li><strong>Local Travel:</strong> Auto-rickshaws, taxis, and local buses are readily available</li>
+                    <li><strong>Booking:</strong> Use apps like Uber, Ola, or local travel services</li>
+                    <li><strong>Trains:</strong> Book early through Indian Railways website for best fares</li>
+                    <li><strong>Flights:</strong> Consider flights for longer distances (Delhi to Agra)</li>
+                </ul>
+            </div>
+            
+            <div class="city-section">
+                <h3>Accommodation Guide</h3>
+                <ul>
+                    <li><strong>Budget:</strong> Guest houses, hostels, and budget hotels (₹500-1500/night)</li>
+                    <li><strong>Mid-range:</strong> 3-4 star hotels with good facilities (₹2000-5000/night)</li>
+                    <li><strong>Luxury:</strong> Heritage hotels and resorts for premium experience (₹5000+/night)</li>
+                    <li><strong>Book in Advance:</strong> Popular sites get booked quickly, especially during festivals</li>
+                    <li><strong>Near Landmarks:</strong> Choose hotels close to major attractions for convenience</li>
+                </ul>
+            </div>
+            
+            <div class="city-section">
+                <h3>Cultural Etiquette</h3>
+                <ul>
+                    <li><strong>Temples & Religious Sites:</strong> Remove shoes, dress modestly, respect rituals</li>
+                    <li><strong>Photography:</strong> Ask before taking photos of people. Some temples restrict photography</li>
+                    <li><strong>Food:</strong> Try local cuisine, but check vegetarian/non-vegetarian options</li>
+                    <li><strong>Greetings:</strong> "Namaste" with folded hands is respectful greeting</li>
+                    <li><strong>Behavior:</strong> Be respectful during religious ceremonies and processions</li>
+                </ul>
+            </div>
+            
+            <div class="city-section">
+                <h3>Safety & Health</h3>
+                <ul>
+                    <li><strong>Water:</strong> Drink bottled water only. Avoid tap water and raw vegetables</li>
+                    <li><strong>Sun Protection:</strong> Carry sunscreen, sunglasses, and hat</li>
+                    <li><strong>Travel Insurance:</strong> Get comprehensive travel insurance before journey</li>
+                    <li><strong>Money:</strong> Carry cards, cash in major denominations. ATMs are widely available</li>
+                    <li><strong>Emergency Numbers:</strong> Keep 100 (Police), 101 (Fire), 102 (Ambulance) saved</li>
+                </ul>
+            </div>
+            
+            <div class="city-section">
+                <h3>What to Pack</h3>
+                <ul>
+                    <li><strong>Clothing:</strong> Cotton clothes for summer, layers for winter, formal wear for temples</li>
+                    <li><strong>Footwear:</strong> Comfortable walking shoes, slippers for temple visits</li>
+                    <li><strong>Essentials:</strong> Medications, charger, power bank, travel adapter</li>
+                    <li><strong>Documents:</strong> Passport, ID, hotel confirmations, train tickets</li>
+                    <li><strong>Toiletries:</strong> Sunscreen, insect repellent, first aid kit</li>
+                </ul>
+            </div>
+            
+            <div class="city-section">
+                <h3>Budget Estimate (Per Person, 7-10 Days)</h3>
+                <ul>
+                    <li><strong>Budget Travel:</strong> ₹8,000-12,000 (basic accommodation, local food, transport)</li>
+                    <li><strong>Mid-range:</strong> ₹15,000-25,000 (comfortable hotels, mixed dining, tours)</li>
+                    <li><strong>Luxury:</strong> ₹35,000+ (premium hotels, fine dining, private guides)</li>
+                    <li><strong>Tips:</strong> Budget 10-15% extra for unexpected expenses and tips</li>
+                </ul>
+            </div>
+            
+            <div class="back-to-top">
+                <a href="#top">🏠 Back to Top</a>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <!-- Closing Section -->
+        <div class="section">
+            <h2>Final Thoughts</h2>
+            <div class="intro-text">
+                <p>India's iconic cities offer more than just tourist attractions—they provide a journey into the soul of the country. From Varanasi's spiritual aura to Agra's architectural magnificence, each city tells a unique story of devotion, heritage, and cultural richness.</p>
+                <p>Whether you're a history enthusiast, a spiritual seeker, a food lover, or an adventure traveler, these cities have something magical to offer. The memories you create here will last a lifetime.</p>
+                <p><strong>Happy travels! 🌟 Namaste! 🙏</strong></p>
+            </div>
+        </div>
+    </div>
+<hr>
+
+<div id="privacy-policy" class="section">
+    <h2>Privacy Policy</h2>
+    <div class="intro-text">
+        <p>
+            This website is a student academic project created for educational purposes only.
+            No personal data is collected, stored, or shared through this website.
+        </p>
+        <p>
+            All images and embedded videos are used strictly for learning and demonstration.
+            External content belongs to its respective owners.
+        </p>
+    </div>
+</div>
+<hr>
+
+<div id="faqs" class="section">
+    <h2>Travel FAQs – Visiting Iconic Indian Cities</h2>
+
+    <div class="intro-text">
+
+        <p>
+            <strong>Q1. What is the best time to visit these cities?</strong><br>
+            The ideal time to visit Varanasi, Ayodhya, Mathura, Jaipur, and Agra is between <strong>October and March</strong>, when the weather is pleasant for sightseeing. Summers can be very hot, especially in Jaipur and Agra.
+        </p>
+
+        <p>
+            <strong>Q2. How many days are sufficient to explore each city?</strong><br>
+            Generally, <strong>2–3 days per city</strong> are enough to cover major attractions. Jaipur may require 3–4 days due to its forts and palaces, while Ayodhya and Mathura can be explored in 1–2 days.
+        </p>
+
+        <p>
+            <strong>Q3. Are these cities suitable for family and senior citizens?</strong><br>
+            Yes. All the listed cities are family-friendly. Senior citizens should plan visits during cooler months and avoid excessive walking, especially in cities like Varanasi and Jaipur.
+        </p>
+
+        <p>
+            <strong>Q4. What type of food is commonly available?</strong><br>
+            These cities offer a wide variety of <strong>vegetarian food</strong>, especially in Varanasi, Ayodhya, and Mathura. Jaipur and Agra also offer both vegetarian and non-vegetarian options.
+        </p>
+
+        <p>
+            <strong>Q5. Is it safe to travel to these cities?</strong><br>
+            Yes, these cities are generally safe for tourists. However, visitors should take common precautions such as avoiding isolated areas at night, safeguarding valuables, and using registered transport services.
+        </p>
+
+        <p>
+            <strong>Q6. What is the best way to travel between these cities?</strong><br>
+            <strong>Trains</strong> are the most convenient and affordable option. Road travel via buses or taxis is also popular, especially between Agra, Mathura, and Jaipur.
+        </p>
+
+        <p>
+            <strong>Q7. Are local guides available at tourist places?</strong><br>
+            Yes. Licensed guides are available at major attractions such as the Taj Mahal (Agra), Amber Fort (Jaipur), and ghats in Varanasi. Hiring a guide can enhance understanding of historical and cultural details.
+        </p>
+
+        <p>
+            <strong>Q8. What should visitors wear while traveling?</strong><br>
+            Modest and comfortable clothing is recommended, especially while visiting temples and religious sites. Light cotton clothes are suitable in summer, while light woolens are advised in winter.
+        </p>
+
+        <p>
+            <strong>Q9. Are photography and videography allowed at tourist sites?</strong><br>
+            Photography is generally allowed at most places, but some temples and monuments may have restrictions or separate charges. Always check local rules before clicking photos.
+        </p>
+
+        <p>
+            <strong>Q10. Is it necessary to book hotels and tickets in advance?</strong><br>
+            Yes. During peak seasons and festivals, it is advisable to book hotels, train tickets, and monument entry tickets in advance to avoid last-minute inconvenience.
+        </p>
+
+<!-- BACK TO TOP BUTTON -->
+<div style="text-align:center;margin:50px 0;">
+    <a href="#top" style="
+        display:inline-block;
+        padding:14px 30px;
+        background-color:#27ae60;
+        color:white;
+        text-decoration:none;
+        border-radius:30px;
+        font-weight:600;
+        font-size:1em;
+        box-shadow:0 4px 8px rgba(39,174,96,0.4);
+    ">
+        ⬆️ Back to Top
+    </a>
+</div>
+
+
+    </div>
+</div>
+</div>
+</body>
+</html>
